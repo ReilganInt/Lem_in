@@ -1,0 +1,6 @@
+*.o
+.DS_Store
+.idea
+*.swp
+README.md
+.vscode
