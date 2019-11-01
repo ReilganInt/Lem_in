@@ -13,9 +13,9 @@
 NAME = lem-in
 FLAGS = -Wall -Wextra -Werror
 
-SRC_NAME =	\
-			\
-			\
+SRC_NAME =	main.c
+
+
 
 
 OBJ_NAME = $(SRC_NAME:%.c=%.o)
