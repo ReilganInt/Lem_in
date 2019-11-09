@@ -1,38 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   validInput.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmormont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/08 21:15:06 by vmormont          #+#    #+#             */
-/*   Updated: 2019/11/08 21:15:08 by vmormont         ###   ########.fr       */
+/*   Created: 2019/11/08 21:14:55 by vmormont          #+#    #+#             */
+/*   Updated: 2019/11/08 21:14:56 by vmormont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
-
-t_path			*get_path()
+/*
+int				valid_input()
 {
-	/* data */
-}
 
-t_ants			*get_ants()
-{
-	/* data */
 }
-
-t_vertex		*get_vertex()
-{
-	/* data */
-}
-
-int				main(int argc, char **argv)
-{
-	t_lemin		*lemin;
-	t_input		*input;
-	t_path		*path;
-
-	input = get_input();
-	return (0);
-}
+*/

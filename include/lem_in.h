@@ -23,6 +23,44 @@
 # include <string.h>
 # include <float.h>
 
-int main(void);
+/*
+**	Description of graph node
+*/
+
+typedef struct		s_lemin
+{
+	int				antsNum;
+	t_ants			*ants;
+	int				vertexs;
+	int				**edges;
+	t_vertex		**rooms;
+	t_vertex		*start;
+	t_vertex		*end;
+}					t_lemin;
+
+typedef struct		s_input
+{
+	char			*line;
+	struct s_input	*back;
+	struct s_input	*front;
+}					t_input;
+
+t_input			*get_input(void);
+
+typedef struct		s_path
+{
+	/* data */	
+}					t_path;
+
+
+typedef struct		s_vertex
+{
+	/* data */
+}					t_vertex;
+
+typedef struct		s_ants
+{
+	/* data */
+}					t_ants;
 
 #endif

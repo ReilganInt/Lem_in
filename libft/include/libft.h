@@ -30,7 +30,7 @@
 ** static variables.
 */
 
-# define BUFF_SIZE 1
+# define BUFF_SIZE 12
 
 typedef struct		s_list
 {
