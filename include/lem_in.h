@@ -41,6 +41,7 @@ typedef struct		s_lemin
 typedef struct		s_input
 {
 	char			*line;
+	int				type;
 	struct s_input	*back;
 	struct s_input	*front;
 }					t_input;
@@ -55,6 +56,7 @@ typedef struct		s_path
 
 typedef struct		s_vertex
 {
+	char			*name;
 	/* data */
 }					t_vertex;
 

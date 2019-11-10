@@ -34,5 +34,7 @@ int				main(int argc, char **argv)
 	t_path		*path;
 
 	input = get_input();
+	if (!(valid_input(input, lemin)))
+		put_error("Validation error");
 	return (0);
 }

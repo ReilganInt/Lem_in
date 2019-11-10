@@ -12,6 +12,33 @@
 
 #include "lem_in.h"
 
+/*
+**	1 - start, 2 - end, 3 - comment, 4 - vertex, 5 - edges, 6 - ants or trash
+*/
+
+int             check_line(char *line)
+{
+    int         i;
+
+    if (*line == '#')
+    {
+       if (ft_strequ(line, "##start"))
+			return (1);
+		if (ft_strequ(line, "##end"))
+			return (2);
+		return (3);
+    }
+	while (*line)
+	{
+		if (*line == ' ')
+			return (4);
+		if (*line == '-')
+			return (5);
+		++line;
+	}
+	return (6);
+}
+
 t_input			*new_t_input(t_input *temp)
 {
 	t_input		*new_input;
@@ -19,6 +46,7 @@ t_input			*new_t_input(t_input *temp)
 	if (new_input = (t_input *)malloc(sizeof(t_input)))
 		put_error("Can't allocate memory");
 	new_input->line = NULL;
+	new_input->type = NULL;
 	if (temp && temp->front)
 		new_input->back = temp;
 	else
@@ -37,6 +65,7 @@ void			read_input(t_input **adr_input)
 	while ((read_num = get_next_line(STDIN_FILENO, &line)) > 0)
 	{
 		(*temp_input)->line = line;
+		(*temp_input)->type = check_line(line);
 		(*temp_input)->front = *temp_input;
 		(*temp_input)->front = new_t_input(*temp_input);
 		(*temp_input) = (*temp_input)->front;
