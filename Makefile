@@ -12,12 +12,7 @@
 
 NAME = lem-in
 FLAGS = -Wall -Wextra -Werror
-
 SRC_NAME =	main.c
-
-
-
-
 OBJ_NAME = $(SRC_NAME:%.c=%.o)
 
 OBJ = $(addprefix $(OBJ_DIR), $(OBJ_NAME))
@@ -32,7 +27,7 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@make -C $(LIB_DIR) --silent
-	@gcc -o $(NAME)  $(OBJ) -L $(LIB_DIR) -lft
+	@gcc -o $(NAME) $(OBJ) -L $(LIB_DIR) -lft
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p $(OBJ_DIR)

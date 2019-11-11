@@ -73,12 +73,14 @@ void			read_input(t_input **adr_input)
 	}
 }
 
-t_input			*get_input(void)
+t_input			*get_input(t_lemin *lemin)
 {
 	t_input		*new_input;
 
 	if (!(new_input = new_t_input(NULL)))
 		put_error("Can't allocate memory");
 	read_input(&new_input);
+	if (!(valid_input(new_input, lemin)))
+		put_error("Validation error");
 	return (new_input);
 }

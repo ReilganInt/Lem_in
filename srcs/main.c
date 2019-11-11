@@ -29,12 +29,10 @@ t_vertex		*get_vertex()
 
 int				main(int argc, char **argv)
 {
-	t_lemin		*lemin;
+	t_lemin		lemin;
 	t_input		*input;
 	t_path		*path;
 
-	input = get_input();
-	if (!(valid_input(input, lemin)))
-		put_error("Validation error");
+	input = get_input(&lemin);
 	return (0);
 }

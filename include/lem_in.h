@@ -46,7 +46,7 @@ typedef struct		s_input
 	struct s_input	*front;
 }					t_input;
 
-t_input			*get_input(void);
+t_input			*get_input(t_lemin *lemin);
 
 typedef struct		s_path
 {
