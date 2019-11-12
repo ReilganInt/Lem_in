@@ -30,7 +30,6 @@
 typedef struct		s_lemin
 {
 	int				antsNum;
-	t_ants			*ants;
 	int				vertexs;
 	int				**edges;
 	t_vertex		**rooms;
@@ -48,10 +47,10 @@ typedef struct		s_input
 
 t_input			*get_input(t_lemin *lemin);
 
-typedef struct		s_path
+typedef struct		s_way
 {
 	/* data */	
-}					t_path;
+}					t_way;
 
 
 typedef struct		s_vertex
@@ -59,10 +58,5 @@ typedef struct		s_vertex
 	char			*name;
 	/* data */
 }					t_vertex;
-
-typedef struct		s_ants
-{
-	/* data */
-}					t_ants;
 
 #endif

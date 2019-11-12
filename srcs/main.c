@@ -12,26 +12,10 @@
 
 #include "lem_in.h"
 
-t_path			*get_path()
-{
-	/* data */
-}
-
-t_ants			*get_ants()
-{
-	/* data */
-}
-
-t_vertex		*get_vertex()
-{
-	/* data */
-}
-
 int				main(int argc, char **argv)
 {
 	t_lemin		lemin;
 	t_input		*input;
-	t_path		*path;
 
 	input = get_input(&lemin);
 	return (0);

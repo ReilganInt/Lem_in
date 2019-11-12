@@ -16,9 +16,9 @@
 **	1 - start, 2 - end, 3 - comment, 4 - vertex, 5 - edges, 6 - ants or trash
 */
 
-int             check_line(char *line)
+static int		check_line(char *line)
 {
-    int         i;
+    int			i;
 
     if (*line == '#')
     {
@@ -39,7 +39,7 @@ int             check_line(char *line)
 	return (6);
 }
 
-t_input			*new_t_input(t_input *temp)
+static t_input	*new_t_input(t_input *temp)
 {
 	t_input		*new_input;
 
