@@ -66,7 +66,7 @@ static int		valid_ants(t_input **input)
 
 void			valid_input(t_input	*input, t_lemin *lemin)
 {
-	lemin->ants = valid_ants(&input);
-	lemin->vertexs = valid_vertexs(&input);
+	lemin->antsNum = valid_ants(&input);
+	lemin->vertexsNum = valid_vertexs(&input);
 
 }
