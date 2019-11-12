@@ -12,6 +12,12 @@
 
 #include "lem_in.h"
 
+void			put_error(char *error)
+{
+	ft_printf("%s\n", error);
+	exit(EXIT_FAILURE);
+}
+
 int				main(int argc, char **argv)
 {
 	t_lemin		lemin;

@@ -63,5 +63,6 @@ typedef struct		s_vertex
 
 
 int					main(int argc, char **argv);
+void				put_error(char *error);
 
 #endif
