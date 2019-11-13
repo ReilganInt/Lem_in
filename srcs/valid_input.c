@@ -16,6 +16,13 @@
 **	1 - start, 2 - end, 3 - comment, 4 - vertex, 5 - edges, 6 - ants or trash
 */
 
+static int**	valid_edges(t_input **input)
+{
+	/*	Need adjacency matrix
+	**	or adjacency sheets
+	*/
+}
+
 static int		valid_vertexs(t_input **input)
 {
 	int			vertexs;
@@ -68,5 +75,5 @@ void			valid_input(t_input	*input, t_lemin *lemin)
 {
 	lemin->antsNum = valid_ants(&input);
 	lemin->vertexsNum = valid_vertexs(&input);
-
+	lemin->edges = valid_edges(&input); 
 }

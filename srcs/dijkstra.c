@@ -1,30 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   dijkstra.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vmormont <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/11/08 21:15:06 by vmormont          #+#    #+#             */
-/*   Updated: 2019/11/08 21:15:08 by vmormont         ###   ########.fr       */
+/*   Created: 2019/11/13 04:08:11 by vmormont          #+#    #+#             */
+/*   Updated: 2019/11/13 04:08:12 by vmormont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lem_in.h"
 
-void			put_error(char *error)
+t_way			dijkstra_ford(t_lemin *lemin, t_input *input)
 {
-	ft_printf("%s\n", error);
-	exit(EXIT_FAILURE);
-}
-
-int				main(int argc, char **argv)
-{
-	t_lemin		lemin;
-	t_input		*input;
 	t_way		ways;
+	const int	inf = 2147483647;
+	char		flag;
+	int			i;
 
-	input = get_input(&lemin);
-	ways = dijkstra_ford(&lemin, input);
-	return (0);
+	i = 0;
+	if (lemin->antsNum > 1)
+		while (1)
+		{
+			flag = '0';
+			while (i < m)
+			{
+				if ( < inf)
+					if ()
+					{
+
+						flag = '1';
+					}
+				i++;
+			}
+			if (!flag)
+				break ;
+		}
+	else
+	{
+		/* 1 short way */
+	}
+	
 }
