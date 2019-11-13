@@ -53,13 +53,14 @@ typedef struct		s_way
 	/* data ??? */	
 }					t_way;
 
-t_way           dijkstra_ford(t_lemin *lemin, t_input *input);
+t_way				dijkstra_ford(t_lemin *lemin, t_input *input);
 
 
 typedef struct		s_vertex
 {
 	int				id;
 	char			*name;
+	int				ants;
 	/* data */
 }					t_vertex;
 

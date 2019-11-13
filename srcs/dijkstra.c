@@ -20,26 +20,19 @@ t_way			dijkstra_ford(t_lemin *lemin, t_input *input)
 	int			i;
 
 	i = 0;
-	if (lemin->antsNum > 1)
-		while (1)
-		{
-			flag = '0';
-			while (i < m)
-			{
-				if ( < inf)
-					if ()
-					{
-
-						flag = '1';
-					}
-				i++;
-			}
-			if (!flag)
-				break ;
-		}
-	else
+	while (1)
 	{
-		/* 1 short way */
+		flag = '0';
+		while (i < m)
+		{
+			if ( < inf)
+				if ()
+				{
+					flag = '1';
+				}
+			i++;
+		}
+		if (!flag)
+			break ;
 	}
-	
 }
