@@ -1,0 +1,32 @@
+/*
+**DOC FOR ft_printf
+**
+**SPEC:
+**	NUM_INT:
+**		SIGNED_INT:
+**		%d %D %i
+**		UNSIGNED_INT:
+**		%u %U %o %O %x %X %p %b %B
+**
+**	NUM_DOUBLE:
+**	%f %F %e %E %g %G
+**
+**	OTHER:
+**	%n
+**
+**	BONUS:
+**	%v %k %r
+**
+**FLAGS:
+**	# 0 + - <SPACE> * width accuracy (support undef. beh.)
+**
+**SUPPORT_SIZE:
+**	l ll h hh z j t L (support undef. beh.)
+**
+**BONUS_PART:
+**	convert unicode to utf-8 and print to display(example: ft_printf("%ls", L"привет мир") input: привет мир)
+**
+**
+**	add color for text(example: ft_printf("{/red}hello world"), text will red(form for color "{/color}"))
+**
+*/
